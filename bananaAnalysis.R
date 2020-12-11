@@ -170,7 +170,7 @@ for(r in 1:R){
 mod_names <- c("LDA", "QDA", "NB", "kNN", "LR", "SVM", "RBF SVM", "Tree", "RF", "XGB")
 
 #Error means
-err_means <- data.frame(mod_names, colMeans(error_sh))
+err_means <- data.frame("Model" = mod_names, "Mean Error" = colMeans(error_sh))
 err_means
 
 #Generate a boxplot of the errors
